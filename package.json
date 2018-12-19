@@ -1,0 +1,30 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "简历",
+  "main": "dist/demo.html",
+  "scripts": {
+    "dev": "npx webpack -w",
+    "build": "npx webpack"
+  },
+  "author": "Cecil",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^0.5.1",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "rollup": "^0.62.0",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  }
+}

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk//IGNORE"></meta>
+  <style>
+    html,
+    body,
+    p,
+    ul,
+    table,
+    tr,
+    td {
+      margin: 0;
+      padding: 0
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    li {
+      list-style: none
+    }
+
+    img {
+      border: 0 none
+    }
+
+    body {
+      font-family: 'Microsoft YaHei';
+      font-size: 14px
+    }
+
+    div,
+    span,
+    a {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 0 none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box
+    }
+
+    td {
+      text-align: left
+    }
+
+    .resume_clearfix {
+      display: block;
+      overflow: hidden;
+      clear: both
+    }
+
+    .all_wrap {
+      width: 693px
+    }
+
+    .logo_divide {
+      border-bottom: 1px solid #b9b9b9
+    }
+
+    .at {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden
+    }
+
+    .page {
+      width: 693px;
+      margin: 0 auto;
+      padding: 3px;
+      background-color: #fff
+    }
+
+    .gray {
+      color: #919191 !important
+    }
+
+    .l_green {
+      color: #6d8194 !important
+    }
+
+    .blue {
+      color: #4567af !important
+    }
+
+    .yellow {
+      color: #fae001 !important
+    }
+
+    .y_green {
+      color: #a4b049 !important
+    }
+
+    .s_blue {
+      color: #00a0e9 !important
+    }
+
+    .orange {
+      color: #f39800 !important
+    }
+
+    .resume_box {
+      border: 15px solid #efefef
+    }
+
+    .company {
+      font-size: 12px;
+      font-weight: bold
+    }
+
+    .infomation_l {
+      width: 266px;
+      vertical-align: top;
+      background-color: #2d4e5c
+    }
+
+    .top {
+      margin: 26px 0px 18px 0px
+    }
+
+    .picture {
+      text-align: center
+    }
+
+    .name {
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      color: #fff;
+      text-align: center
+    }
+
+    .posi {
+      width: 265px;
+      line-height: 14px;
+      text-align: center;
+      padding: 0 10px
+    }
+
+    .mes_l {
+      margin-left: 20px
+    }
+
+    .title {
+      height: 26px;
+      font-weight: bold;
+      color: #d8dcde
+    }
+
+    .border_b2 {
+      margin-left: 20px;
+      border-bottom: 1px solid #91a875
+    }
+
+    .per_list {
+      line-height: 22px;
+      font-size: 12px;
+      color: #d8dcde
+    }
+
+    .title_iconl {
+      *width: 12px;
+      padding-right: 8px
+    }
+
+    .title_icon1 img {
+      margin-top: 5px
+    }
+
+    .b_border {
+      border-top: 1px solid #233c47
+    }
+
+    .dir {
+      vertical-align: top
+    }
+
+    .limit1 {
+      width: 180px
+    }
+
+    .wid {
+      width: 225px
+    }
+
+    .limit2 {
+      width: 204px
+    }
+
+    .con {
+      position: relative;
+      width: 176px;
+      height: 16px;
+      *height: 15px;
+      top: 2px;
+      border: 1px solid #b9b9b9
+    }
+
+    .rank {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 16px;
+      line-height: 16px;
+      text-indent: 6px;
+      top: 0px;
+      left: 0px;
+      background-color: #b9b9b9
+    }
+
+    .email {
+      max-width: 146px;
+      word-wrap: break-word
+    }
+
+    .infomation_r {
+      width: 386px;
+      vertical-align: top;
+      padding-left: 12px;
+      background-color: #efefef
+    }
+
+    .mes_r {
+      margin-left: 26px;
+      padding: 10px 0 16px 0
+    }
+
+    .title_icon {
+      *width: 17px;
+      padding-right: 8px;
+      border: 0 none
+    }
+
+    .title_icon img {
+      margin-top: 5px
+    }
+
+    .title_txt {
+      width: 340px;
+      height: 28px;
+      line-height: 28px;
+      font-weight: bold;
+      color: #2d4e5c;
+      text-align: left;
+      border-bottom: 1px solid #96a6ad
+    }
+
+    .title_txt1 {
+      width: 235px;
+      height: 27px;
+      line-height: 27px;
+      font-weight: bold;
+      color: #d8dcde;
+      text-align: left
+    }
+
+    .mes_boxl {
+      margin: 10px 0 22px 0
+    }
+
+    .mes_detail {
+      margin: 10px 0px 16px 0px
+    }
+
+    .mes_detail_a {
+      margin-bottom: 10px
+    }
+
+    .mes_r .info_list {
+      line-height: 22px;
+      font-size: 12px;
+      color: #000;
+      overflow: hidden
+    }
+
+    .mes_r .limit {
+      width: 290px
+    }
+
+    .mes_r .edu {
+      width: 42px;
+      vertical-align: top
+    }
+
+    .mes_r .edu_a {
+      width: 100px;
+      vertical-align: top
+    }
+
+    .mes_r .reu {
+      max-width: 144px;
+      vertical-align: top
+    }
+
+    .mes_r .reu_a {
+      max-width: 190px;
+      vertical-align: top;
+      padding-right: 20px
+    }
+
+    .mes_r .in {
+      line-height: 22px;
+      font-size: 12px;
+      color: #919191
+    }
+
+    .mes_r .exp {
+      width: 180px
+    }
+
+    .mes_r .pofi {
+      width: 106px;
+      text-align: right;
+      vertical-align: top
+    }
+
+    .mes_r .edu1 {
+      width: 206px;
+      margin-right: 20px
+    }
+
+    .mes_r .edu2 {
+      width: 220px;
+      padding-right: 20px
+    }
+
+    .mes_r .edu2 span {
+      display: block;
+      width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+
+    .infomation_l2 {
+      width: 276px;
+      vertical-align: top;
+      background-color: #466820
+    }
+
+    .title_txt_b {
+      width: 340px;
+      height: 28px;
+      line-height: 28px;
+      font-weight: bold;
+      color: #466820;
+      text-align: left;
+      border-bottom: 1px solid #a2b68c
+    }
+
+    .mes_l .mer_right {
+      line-height: 22px;
+      font-size: 12px;
+      color: #919191;
+      padding-left: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div xmlns="" class="page">
+    <div class="all_wrap">
+      <table class="resume_box">
+        <tbody>
+          <tr>
+            <td class="infomation_l2">
+              <div class="top">
+                <p class="picture"><img src="photo.jpeg" alt="简历照片"
+                    width="105" height="148"></p>
+                <p class="name">陈豪杰</p>
+                <p class="posi"><span class="y_green">FED</span></p>
+              </div>
+              <table class="border_b2">
+                <tbody>
+                  <tr class="title">
+                    <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon7_type1.png"
+                        width="12" height="13"></td>
+                    <td class="wid"><span>个人信息</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_boxl">
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td class="dir"><span>工作经验：</span></td>
+                      <td class="limit1"><span class="y_green">一年</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td><span>性别：</span></td>
+                      <td><span class="y_green">
+                          男
+                        </span></td>
+                    </tr>
+                    <tr class="per_list">
+                      <td><span>年龄：</span></td>
+                      <td><span class="y_green">24岁</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td class="dir"><span>居住地：</span></td>
+                      <td class="limit1"><span class="y_green">杭州</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td class="dir"><span>电话：</span></td>
+                      <td class="limit2"><span class="y_green">13758715359(手机)
+                        </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td class="dir"><span>E-mail：</span></td>
+                      <td class="limit1"><span class="y_green">jiegithub@gmail.com</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table class="border_b2">
+                <tbody>
+                  <tr class="title">
+                    <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon8_type1.png"
+                        width="12" height="13"></td>
+                    <td class="wid"><span>求职意向</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_boxl">
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td class="dir"><span>到岗时间：</span></td>
+                      <td class="limit1"><span class="y_green">三周之内</span></td>
+                    </tr>
+                    <tr class="per_list">
+                      <td><span>工作性质：</span></td>
+                      <td class="limit1"><span class="y_green">全职</span></td>
+                    </tr>
+                    <tr class="per_list">
+                      <td class="dir"><span>目标地点：</span></td>
+                      <td class="limit1"><span class="y_green">杭州</span></td>
+                    </tr>
+                    <tr class="per_list">
+                      <td><span>期望月薪：</span></td>
+                      <td class="limit1"><span class="y_green">16 - 18k</span></td>
+                    </tr>
+                    <tr class="per_list">
+                      <td class="dir"><span>目标职能：</span></td>
+                      <td class="limit1"><span class="y_green">大前端研发</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table class="border_b2" style="display: none;">
+                <tbody>
+                  <tr class="title">
+                    <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon9_type1.png"
+                        width="12" height="13"></td>
+                    <td class="wid"><span>语言能力</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_boxl" style="display: none;">
+                <table class="mes_l">
+                  <tbody>
+                    <tr class="per_list">
+                      <td><span>英语：</span></td>
+                      <td class="limit2">
+                        <p class="con"><span class="rank">熟练</span></p>
+                      </td>
+                    </tr>
+                    <tr class="per_list">
+                      <td><span>听说：</span></td>
+                      <td class="limit2">
+                        <p class="con"><span class="rank">熟练</span></p>
+                      </td>
+                    </tr>
+                    <tr class="per_list">
+                      <td><span>读写：</span></td>
+                      <td class="limit2">
+                        <p class="con"><span class="rank">熟练</span></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+            <td class="infomation_r">
+              <table class="per_title">
+                <tbody>
+                  <tr>
+                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type2.png"
+                        alt="最近工作" width="17" height="16"></td>
+                    <td width="340">
+                      <p class="title_txt_b">最近工作</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_r">
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>公司：</span></td>
+                      <td class="gray limit"><span>杭州兑吧网络科技有限公司</span></td>
+                    </tr>
+                    <tr class="info_list">
+                      <td class="edu"><span>行业：</span></td>
+                      <td class="limit"><span class="gray limit">互联网广告</span></td>
+                    </tr>
+                    <tr class="info_list">
+                      <td class="edu"><span>职位：</span></td>
+                      <td class="gray limit"><span>前端支撑</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table class="per_title">
+                <tbody>
+                  <tr>
+                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon3_type2.png"
+                        alt="自我介绍" width="17" height="16"></td>
+                    <td width="340">
+                      <p class="title_txt_b">自我介绍</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_r">
+                <p class="in" style="white-space: pre-line;">工作中，我非常看重技术团队的规范化落地、协同工作以及浓厚的技术氛围。
+
+                  - 精通Vue，研究过其响应式系统原理
+                  - 熟悉React、Mobx，有中大型React应用设计和编码经验（拖拽式h5页面引擎）
+                  - 精通浏览器异步机制原理，研究过whatwg的Event processing model
+                  - 了解v8引擎（研究中）
+                  - 了解d3（研究中）
+                  - 熟悉AST，有实际应用经验
+                  - 熟悉ssr，并根据官方文档从零搭建[脚手架模版](https://github.com/Cecil0o0/vue-ssr-temp)，并开发qf-cli(https://www.npmjs.com/package/qf-cli)
+                  - 熟悉NodeJS(https://blog.qingf.me/?p=849)，精通其运行时原理
+                  - 熟悉koa，熟悉其中间件模型
+                  - 熟练使用MySQL与MongoDB
+                  - 了解Web Component规范集合包括有shadow Dom和customElement和HTML templates等
+                  - 精通RESTFUL，熟悉GraphQL
+                  - 熟练使用macOS,git,npm,node,vscode,chrome devTools等开发相关工具
+                  - 熟悉不同分辨率、跨终端（不考虑老款机型）适配的实践
+                  - 熟悉使用搭建SPA，MPA工程，组件封装，应用部署，域名解析，nginx代理配置
+                  - 熟悉使用webpack做前端工程构建工具，并了解过rollup、parcel、gulp
+                  - 熟悉http2的原理
+                  - 熟悉nginx做反向代理，负载均衡，有实际应用经验
+                  - 了解lowdb，mongodb，reddis，consul，熟悉rabbitmq
+                  - 熟悉微服务架构基本原理，并以此为基础自主整合nodejs微服务框架https://blog.qingf.me/?p=734
+
+                  掘金：清风0o0
+                  sf：Cecil0o0
+                  个人博客地址：https://blog.qingf.me
+                  github地址：https://github.com/Cecil0o0
+                </p>
+              </div>
+              <table class="per_title">
+                <tbody>
+                  <tr>
+                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png"
+                        alt="工作经验" width="17" height="16"></td>
+                    <td width="340">
+                      <p class="title_txt_b">工作经验</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_r">
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>职位：</span></td>
+                      <td class="exp"><span class="gray">全栈开发</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>公司：</span></td>
+                      <td class="exp"><span class="gray">杭州启程电子科技股份有限公司</span></td>
+                      <td class="pofi"><span class="gray">2016/08~2017/04</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td><span>工作内容：</span></td>
+                    </tr>
+                    <tr class="in">
+                      <td>一个月为金丽温高速信息公司开发一套web后台管理系统。团队小而精，两个web端（包含我）一安卓一iOS。我负责巡检模块的全栈开发，主要包括工作内容有MySQL数据库建表，mybatis做DAO层开发，用jq、avalon、bootstrap、百度地图JSSDK等等各种三方库做视图层，springmvc路由映射做分发。（虽然后面不会再接触java的技术，但也是一种沉淀）</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mes_r">
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>职位：</span></td>
+                      <td class="exp"><span class="gray">前端开发</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>公司：</span></td>
+                      <td class="exp"><span class="gray">杭州传送门网络科技有限公司</span></td>
+                      <td class="pofi"><span class="gray">2017/06~2018/07</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td><span>工作内容：</span></td>
+                    </tr>
+                    <tr class="in">
+                      <td style="white-space:pre-line;">1.活动系统前端。作为唯一开发人员，自学并使用vue开发，其中依赖echarts等多个第三方库。体验地址https://open.welian.com。自己使用webpack搭建多页工程并独立开发，精细还原设计稿（支持h5活动报名、支付、签到等完整闭环流程，具体业务形态可参考活动行
+                      2.课程小程序。作为主程，实现了核心的播放功能，类知乎、得到。体验请在微信中搜索微链学堂。
+                      3.活动小程序。作为唯一开发人员，负责前端工作中从框架搭建到落地上线的所有流程。体验请在微信中搜索微链活动平台</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mes_r">
+                  <table>
+                    <tbody>
+                      <tr class="info_list">
+                        <td class="edu"><span>职位：</span></td>
+                        <td class="exp"><span class="gray">前端支撑</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr class="info_list">
+                        <td class="edu"><span>公司：</span></td>
+                        <td class="exp"><span class="gray">杭州兑吧网络科技有限公司</span></td>
+                        <td class="pofi"><span class="gray">2018/07~至今</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                      <tr class="info_list">
+                        <td><span>工作内容：</span></td>
+                      </tr>
+                      <tr class="in">
+                        <td>积木系统升级版。落地页制作工具，类似墨刀、h5ds等等。自学React，Mobx，React-DnD等技术，然后前期从技术调研、系统框架设计到独立开发与实际落地均独立完成，并且编写博客后续进行技术分享作准备，详见https://blog.qingf.me/?p=964，后续会更新到掘金等社区以提高自己的技术影响力</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              <table class="per_title">
+                <tbody>
+                  <tr>
+                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type2.png"
+                        alt="教育经历" width="17" height="16"></td>
+                    <td width="340">
+                      <p class="title_txt_b">教育经历</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_r">
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>学校：</span></td>
+                      <td class="exp"><a class="gray" href="javascript:;" target="_blank">温州大学</a></td>
+                      <td class="pofi"><span class="gray">2013/09~2017/06</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>专业：</span></td>
+                      <td class="reu_a"><span class="gray">网络工程</span></td>
+                      <td class="edu"><span class="gray">本科</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table class="per_title">
+                <tbody>
+                  <tr>
+                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png"
+                        alt="证书" width="17" height="16"></td>
+                    <td width="343">
+                      <p class="title_txt_b">证书</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mes_r">
+                <table class="info_list">
+                  <tbody>
+                    <tr>
+                      <td class="edu2"><span class="gray" title="大学英语四级">大学英语四级</span></td>
+                      <td class="pofi"><span class="gray"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="info_list">
+                  <tbody>
+                    <tr>
+                      <td class="edu2"><span class="gray" title="计算机三级">计算机三级</span></td>
+                      <td class="pofi"><span class="gray"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="info_list">
+                  <tbody>
+                    <tr>
+                      <td><span class="gray" title="全国大学生物联网设计大赛华东赛区一等奖">全国大学生物联网设计大赛华东赛区一等奖</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
