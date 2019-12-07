@@ -2,7 +2,40 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=gbk//IGNORE"></meta>
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk//IGNORE">
+  </meta>
+  <style>
+    :root {
+      --primary-color: #244665;
+      --white: #fff;
+      --gray-1: #333;
+      --gray-2: #666;
+      --gray-3: #999;
+    }
+
+    .primary-color {
+      color: var(--primary-color);
+    }
+
+    .info-item-wrapper {
+      margin: 10px 0 22px 0;
+      padding-left: 20px;
+    }
+
+    .info-item {
+      display: flex;
+    }
+
+    .info-item>div {
+      line-height: 22px;
+      font-size: 12px;
+      color: #d8dcde
+    }
+
+    .info-item div {
+      white-space: pre-wrap;
+    }
+  </style>
   <style>
     html,
     body,
@@ -83,7 +116,7 @@
     }
 
     .gray {
-      color: #919191 !important
+      color: var(--gray-1) !important
     }
 
     .l_green {
@@ -98,8 +131,8 @@
       color: #fae001 !important
     }
 
-    .y_green {
-      color: #a4b049 !important
+    .primary-color {
+      color: #D7E3EB !important
     }
 
     .s_blue {
@@ -108,10 +141,6 @@
 
     .orange {
       color: #f39800 !important
-    }
-
-    .resume_box {
-      border: 15px solid #efefef
     }
 
     .company {
@@ -229,7 +258,7 @@
       width: 386px;
       vertical-align: top;
       padding-left: 12px;
-      background-color: #efefef
+      background-color: var(--white);
     }
 
     .mes_r {
@@ -264,10 +293,6 @@
       font-weight: bold;
       color: #d8dcde;
       text-align: left
-    }
-
-    .mes_boxl {
-      margin: 10px 0 22px 0
     }
 
     .mes_detail {
@@ -313,7 +338,7 @@
     .mes_r .in {
       line-height: 22px;
       font-size: 12px;
-      color: #919191
+      color: var(--gray-2);
     }
 
     .mes_r .exp {
@@ -347,7 +372,7 @@
     .infomation_l2 {
       width: 276px;
       vertical-align: top;
-      background-color: #466820
+      background-color: var(--primary-color);
     }
 
     .title_txt_b {
@@ -355,9 +380,9 @@
       height: 28px;
       line-height: 28px;
       font-weight: bold;
-      color: #466820;
+      color: var(--primary-color);
       text-align: left;
-      border-bottom: 1px solid #a2b68c
+      border-bottom: 1px solid var(--primary-color);
     }
 
     .mes_l .mer_right {
@@ -377,196 +402,111 @@
           <tr>
             <td class="infomation_l2">
               <div class="top">
-                <p class="picture"><img src="photo2.jpeg" alt="简历照片"
-                    width="105" height="148"></p>
+                <p class="picture"><img src="photo4.jpeg" alt="简历照片" width="105" height="148"
+                    style="object-fit: cover;"></p>
                 <p class="name">陈豪杰</p>
-                <p class="posi"><span class="y_green">FED</span></p>
+                <p class="posi"><span class="primary-color">Software Engineer</span></p>
               </div>
               <table class="border_b2">
                 <tbody>
                   <tr class="title">
-                    <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon7_type1.png"
-                        width="12" height="13"></td>
-                    <td class="wid"><span>个人信息</span></td>
+                    <td class="title_iconl" valign="middle"><img
+                        src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon7_type1.png" width="12"
+                        height="13"></td>
+                    <td class="wid"><span>Personal Information</span></td>
                   </tr>
                 </tbody>
               </table>
-              <div class="mes_boxl">
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td class="dir"><span>工作经验：</span></td>
-                      <td class="limit1"><span class="y_green">一年</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td><span>性别：</span></td>
-                      <td><span class="y_green">
-                          男
-                        </span></td>
-                    </tr>
-                    <tr class="per_list">
-                      <td><span>年龄：</span></td>
-                      <td><span class="y_green">24岁</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td class="dir"><span>居住地：</span></td>
-                      <td class="limit1"><span class="y_green">杭州</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td class="dir"><span>电话：</span></td>
-                      <td class="limit2"><span class="y_green">13758715359(手机)
-                        </span></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td class="dir"><span>E-mail：</span></td>
-                      <td class="limit1"><span class="y_green">jiegithub@gmail.com</span></td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="info-item-wrapper">
+                <div class="info-item">
+                  <div>Work Years: </div>
+                  <div>Two and a half</div>
+                </div>
+                <div class="info-item">
+                  <div>Sex: </div>
+                  <div>Male</div>
+                </div>
+                <div class="info-item">
+                  <div>Birth: </div>
+                  <div>1994-10</div>
+                </div>
+                <div class="info-item">
+                  <div>Residence: </div>
+                  <div>HangZhou</div>
+                </div>
+                <div class="info-item">
+                  <div>Mobile: </div>
+                  <div>13758715359</div>
+                </div>
+                <div class="info-item">
+                  <div>Email: </div>
+                  <div>jiegithub@gmail.com</div>
+                </div>
               </div>
               <table class="border_b2">
                 <tbody>
                   <tr class="title">
-                    <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon8_type1.png"
-                        width="12" height="13"></td>
-                    <td class="wid"><span>求职意向</span></td>
+                    <td class="title_iconl" valign="middle"><img
+                        src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon8_type1.png" width="12"
+                        height="13"></td>
+                    <td class="wid"><span>Career Expections</span></td>
                   </tr>
                 </tbody>
               </table>
-              <div class="mes_boxl">
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td><span>工作性质：</span></td>
-                      <td class="limit1"><span class="y_green">全职</span></td>
-                    </tr>
-                    <tr class="per_list">
-                      <td class="dir"><span>目标地点：</span></td>
-                      <td class="limit1"><span class="y_green">杭州</span></td>
-                    </tr>
-                    <tr class="per_list">
-                      <td class="dir"><span>目标职能：</span></td>
-                      <td class="limit1"><span class="y_green">大前端研发</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <table class="border_b2" style="display: none;">
-                <tbody>
-                  <tr class="title">
-                    <td class="title_iconl" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon9_type1.png"
-                        width="12" height="13"></td>
-                    <td class="wid"><span>语言能力</span></td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="mes_boxl" style="display: none;">
-                <table class="mes_l">
-                  <tbody>
-                    <tr class="per_list">
-                      <td><span>英语：</span></td>
-                      <td class="limit2">
-                        <p class="con"><span class="rank">熟练</span></p>
-                      </td>
-                    </tr>
-                    <tr class="per_list">
-                      <td><span>听说：</span></td>
-                      <td class="limit2">
-                        <p class="con"><span class="rank">熟练</span></p>
-                      </td>
-                    </tr>
-                    <tr class="per_list">
-                      <td><span>读写：</span></td>
-                      <td class="limit2">
-                        <p class="con"><span class="rank">熟练</span></p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="info-item-wrapper">
+                <div class="info-item">
+                  <div>Location: </div>
+                  <div>HangZhou</div>
+                </div>
+                <div class="info-item">
+                  <div>Industries: </div>
+                  <div>AIoT or Cloud Computing</div>
+                </div>
+                <div class="info-item">
+                  <div>Fields: </div>
+                  <div>Data Visualization</div>
+                </div>
               </div>
             </td>
             <td class="infomation_r">
               <table class="per_title">
                 <tbody>
                   <tr>
-                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type2.png"
-                        alt="最近工作" width="17" height="16"></td>
+                    <td class="title_icon" valign="middle"><img
+                        src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon3_type2.png" alt="自我介绍"
+                        width="17" height="16"></td>
                     <td width="340">
-                      <p class="title_txt_b">最近工作</p>
+                      <p class="title_txt_b">Self Introduction</p>
                     </td>
                   </tr>
                 </tbody>
               </table>
               <div class="mes_r">
-                <table>
-                  <tbody>
-                    <tr class="info_list">
-                      <td class="edu"><span>公司：</span></td>
-                      <td class="gray limit"><span>杭州兑吧网络科技有限公司</span></td>
-                    </tr>
-                    <tr class="info_list">
-                      <td class="edu"><span>行业：</span></td>
-                      <td class="limit"><span class="gray limit">互联网广告</span></td>
-                    </tr>
-                    <tr class="info_list">
-                      <td class="edu"><span>职位：</span></td>
-                      <td class="gray limit"><span>前端支撑</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <table class="per_title">
-                <tbody>
-                  <tr>
-                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon3_type2.png"
-                        alt="自我介绍" width="17" height="16"></td>
-                    <td width="340">
-                      <p class="title_txt_b">自我介绍</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="mes_r">
-                <p class="in" style="white-space: pre-line;">工作中，我非常看重技术团队的规范化落地、协同工作以及浓厚的技术氛围。
+                <p class="in" style="white-space: pre-line;">Make easier, make more efficient.
 
-                  - 精通Vue，研究过其响应式系统原理
-                  - 熟悉React、Mobx，有中大型React应用设计和编码经验（拖拽式h5页面引擎）
-                  - 精通浏览器异步机制原理，研究过whatwg的Event processing model
-                  - 了解v8引擎（研究中）
-                  - 了解d3（研究中）
-                  - 熟悉AST，有实际应用经验
-                  - 熟悉ssr，并根据官方文档从零搭建[脚手架模版](https://github.com/Cecil0o0/vue-ssr-temp)，并开发qf-cli(https://www.npmjs.com/package/qf-cli)
-                  - 熟悉NodeJS(https://blog.qingf.me/?p=849)，精通其运行时原理
-                  - 熟悉koa，熟悉其中间件模型
-                  - 熟练使用MySQL与MongoDB
-                  - 精通RESTFUL，熟悉GraphQL
-                  - 熟练使用macOS,git,npm,node,vscode,chrome devTools等开发相关工具
+                  - 熟悉 Vue，研究过其响应式系统原理
+                  - 熟悉 React、Mobx，有中型 React 应用设计和编码经验（拖拽式h5页面引擎）
+                  - 熟悉 TypeScript 基本使用
+                  - 熟悉浏览器异步机制原理，研究过 whatwg 的 Event Processing Model。
+                  - 熟悉 d3-hierarchy，请看[Demo](https://csb-h95h1.netlify.com/)
+                  - 熟悉 AST，有实际应用经验
+                  - 熟悉 ssr，并根据官方文档从零搭建[脚手架模版](https://github.com/Cecil0o0/vue-ssr-temp)，并开发qf-cli(https://www.npmjs.com/package/qf-cli)
+                  - 熟悉 Node.js(https://blog.qingf.me)，精通其运行时原理
+                  - 熟悉 koa，熟悉其中间件模型
+                  - 熟悉 MySQL 与 MongoDB
+                  - 精通 Restful，熟悉 GraphQL
+                  - 熟练使用 MacOS,git,npm,vscode,chrome devTools 等开发相关工具
                   - 熟悉不同分辨率、跨终端（不考虑老款机型）适配的实践
-                  - 熟悉组件封装，应用部署，域名解析，nginx代理配置
-                  - 熟悉使用webpack做前端工程构建工具，并了解过rollup、parcel、gulp
-                  - 熟悉http2的原理
-                  - 熟悉nginx做反向代理，负载均衡，有实际应用经验
-                  - 了解lowdb，mongodb，reddis，consul，熟悉rabbitmq
-                  - 熟悉微服务架构基本原理，并以此为基础自主整合nodejs微服务框架https://blog.qingf.me/?p=734
+                  - 熟悉组件封装，应用部署，域名解析，nginx 代理配置
+                  - 熟悉使用 webpack 做前端工程构建工具，并了解过 rollup/parcel/gulp
+                  - 熟悉 http2 的原理，了解 http3，了解 IPv6
+                  - 熟悉 nginx 做反向代理，负载均衡，有实际应用经验
+                  - 了解 lowdb,reddis,consul，熟悉 rabbitmq
+                  - 熟悉微服务架构基本原理，并以此为基础自主整合 nodejs 微服务框架(https://blog.qingf.me)，学习为主
+                  - 略熟悉 WebGL 并有过一定实践，请看[Demo](https://3d.qingf.me/webgl/apps/writing-board.html)，对应代码请看[Github](https://github.com/Cecil0o0/webgl)
 
-                  掘金：清风0o0
-                  sf：Cecil0o0
+                  掘金：莫忘0o0
+                  SF：Cecil0o0
                   个人博客地址：https://blog.qingf.me
                   github地址：https://github.com/Cecil0o0
                 </p>
@@ -574,10 +514,11 @@
               <table class="per_title">
                 <tbody>
                   <tr>
-                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png"
-                        alt="工作经验" width="17" height="16"></td>
+                    <td class="title_icon" valign="middle"><img
+                        src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png" alt="工作经验"
+                        width="17" height="16"></td>
                     <td width="340">
-                      <p class="title_txt_b">工作经验</p>
+                      <p class="title_txt_b">Work Experiences</p>
                     </td>
                   </tr>
                 </tbody>
@@ -587,7 +528,7 @@
                   <tbody>
                     <tr class="info_list">
                       <td class="edu"><span>职位：</span></td>
-                      <td class="exp"><span class="gray">全栈开发</span></td>
+                      <td class="exp"><span class="gray">软件开发</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -597,16 +538,6 @@
                       <td class="edu"><span>公司：</span></td>
                       <td class="exp"><span class="gray">杭州启程电子科技股份有限公司</span></td>
                       <td class="pofi"><span class="gray">2016/08~2017/04</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table>
-                  <tbody>
-                    <tr class="info_list">
-                      <td><span>工作内容：</span></td>
-                    </tr>
-                    <tr class="in">
-                      <td>一个月为金丽温高速信息公司开发一套web后台管理系统。我负责巡检模块的全栈开发，主要包括工作内容有MySQL数据库建表，使用MVC模式开发。用过jq、avalon、bootstrap、百度地图JSSDK等等三方库做视图层。</td>
                     </tr>
                   </tbody>
                 </table>
@@ -624,7 +555,7 @@
                   <tbody>
                     <tr class="info_list">
                       <td class="edu"><span>公司：</span></td>
-                      <td class="exp"><span class="gray">杭州传送门网络科技有限公司</span></td>
+                      <td class="exp"><span class="gray">杭州微链</span></td>
                       <td class="pofi"><span class="gray">2017/06~2018/07</span></td>
                     </tr>
                   </tbody>
@@ -635,56 +566,97 @@
                       <td><span>工作内容：</span></td>
                     </tr>
                     <tr class="in">
-                      <td style="white-space:pre-line;">1. 活动系统前端主程，包括管理后端和前端多页h5，包含查看详情、活动报名、支付、签到等完整闭环流程。具体业务形态可参考“活动行”
-                        2. 课程小程序主程。实现核心的播放功能，类似知乎、得到等
-                        3. 活动小程序主程。熟悉wepy框架到独立开发</td>
+                      <td>
+                        1. 活动系统前端主程，包括管理后端和前端多页h5，包含查看详情、活动报名、支付、签到等完整闭环流程。业务请参考“百格活动”<br />
+                        2. 课程小程序主程。实现核心的播放功能，类似知乎、得到等。<br />
+                        3. 活动小程序主程。熟悉wepy框架与独立开发。
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="mes_r">
-                  <table>
-                    <tbody>
-                      <tr class="info_list">
-                        <td class="edu"><span>职位：</span></td>
-                        <td class="exp"><span class="gray">前端支撑</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr class="info_list">
-                        <td class="edu"><span>公司：</span></td>
-                        <td class="exp"><span class="gray">杭州兑吧网络科技有限公司</span></td>
-                        <td class="pofi"><span class="gray">2018/07~至今</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <tbody>
-                      <tr class="info_list">
-                        <td><span>工作内容：</span></td>
-                      </tr>
-                      <tr class="in">
-                        <td style="white-space:pre-line;">1. 积木系统。h5页面制作工具，从技术调研、系统设计到开发均独立完成并实际落地于业务。有点类似但弱于墨刀。
-                          2. 微信外跳系统后端。使用Node.js+本地缓存+定时更新缓存+降级查表的策略可以抗过2000QPS的访问量。
-                          3. 用户行为定位系统后端。参与方案设计，独立设计数据库表结构，使用CORS解决跨域问题。后续使用过程中发现cpu密集型操作影响业务，建议使用web worker解决并实施，并使用rollup打包库落地使用。
-                          4. h5组件化工程。分析公司核心业务-活动工具，进行拆分逻辑。主要用vue的SFC将代码逻辑复用。
-                          5. VOD服务系统搭建。包括转码服务与player SDK。基于jsmpeg。小范围尝试投入业务使用。
-                          6. tuia-egg企业框架。研究egg并开发企业框架，用于无缝对接公司容器环境。主要易于在公司内部开发并维护node服务。
-                          7. 自动录屏服务。设计并研发使用Node.js+ADB协议+（TaskQueue+SyncLock策略）写服务，并使用端口映射做内网穿透。
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>职位：</span></td>
+                      <td class="exp"><span class="gray">前端支撑</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>公司：</span></td>
+                      <td class="exp"><span class="gray">杭州兑吧网络科技有限公司</span></td>
+                      <td class="pofi"><span class="gray">2018/07~2019/04</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td><span>工作内容：</span></td>
+                    </tr>
+                    <tr class="in">
+                      <td>
+                        1. 积木系统。h5页面制作工具，从技术调研、系统设计到开发均独立完成并实际落地于业务。有点类似但弱于墨刀。<br />
+                        2. 微信外跳系统后端。使用Node.js+本地缓存+定时更新缓存+缓存失效降级查表的策略，单机支持2000QPS。<br />
+                        3. 用户行为定位系统后端。参与方案设计，独立设计数据库表结构，使用CORS解决跨域问题。后续使用过程中发现cpu密集型操作影响业务，建议使用web
+                        worker解决并实施，并使用rollup打包库落地使用。<br />
+                        4. h5组件化工程。分析公司核心业务-活动工具，进行逻辑拆分。主要用vue的SFC复用逻辑与视图以提高研发效率。<br />
+                        5. 基于 jsmpeg 开发基于 canvas 的 player SDK，主要目的是解决大部分移动端 mp4 标签兼容性。小范围投入业务使用。<br />
+                        6. tuia-egg企业框架。研究egg并开发企业框架，用于无缝对接公司容器运维环境。为公司内部研发 node 服务。<br />
+                        7. 自动录屏服务。设计并研发使用 Node.js + ADB Protocol +（TaskQueue+ExclusiveLock）写服务，并建议使用端口映射做内网穿透。
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mes_r">
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>职位：</span></td>
+                      <td class="exp"><span class="gray">前端研发工程师</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td class="edu"><span>公司：</span></td>
+                      <td class="exp"><span class="gray">北京字节跳动科技有限公司</span></td>
+                      <td class="pofi"><span class="gray">2019/04~至今</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr class="info_list">
+                      <td><span>工作内容：</span></td>
+                    </tr>
+                    <tr class="in">
+                      <td>
+                        1. 独立完成可视化模块前端研发并高度还原设计稿获得设计师好评<br>
+                        2. 独立完成拖拽虚拟树的调研、设计与开发并落地业务<br>
+                        3. 根据架构要求学习并完全使用 Typescript 研发<br>
+                        4. 研究 Lark Robot/Doc/Sheet/Rosetta 等平台，并在前端组 Chrome 插件中独自开发自动导入国际化文案的工具。<br>
+                        5. 提出区分国内/海外根据 userIP 动态下发 CDN 地址的方案，使用 __webpack_public_path__ 并配合后端实现。<br>
+                        6. 设计、封装与维护业务公共组件；帮助新人快速熟悉业务和前端工程；线上 bug 修复；做 Case Study；日常需求开发；
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <table class="per_title">
                 <tbody>
                   <tr>
-                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type2.png"
-                        alt="教育经历" width="17" height="16"></td>
+                    <td class="title_icon" valign="middle"><img
+                        src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type2.png" alt="教育经历"
+                        width="17" height="16"></td>
                     <td width="340">
-                      <p class="title_txt_b">教育经历</p>
+                      <p class="title_txt_b">Education</p>
                     </td>
                   </tr>
                 </tbody>
@@ -712,10 +684,11 @@
               <table class="per_title">
                 <tbody>
                   <tr>
-                    <td class="title_icon" valign="middle"><img src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png"
-                        alt="证书" width="17" height="16"></td>
+                    <td class="title_icon" valign="middle"><img
+                        src="https://img03.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type2.png" alt="证书" width="17"
+                        height="16"></td>
                     <td width="343">
-                      <p class="title_txt_b">证书</p>
+                      <p class="title_txt_b">Certificates</p>
                     </td>
                   </tr>
                 </tbody>
