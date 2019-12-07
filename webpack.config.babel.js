@@ -1,5 +1,6 @@
 import path from 'path'
 import VueLoaderPlugin from 'vue-loader/lib/plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   mode: 'development',
@@ -29,6 +30,10 @@ export default {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'src/templates/index.html',
+      filename: 'index.html'
+    })
   ]
 }
